@@ -183,4 +183,10 @@ contract CryptoDevsDAO is Ownable {
         (bool sent, ) = payable(owner()).call{value: amount}("");
         require(sent, "FAILED_TO_WITHDRAW_ETHER");
     }
+
+    // The following two functions allow the contract to accept ETH deposits
+    // directly from a wallet without calling a function
+    receive() external payable {}
+
+    fallback() external payable {}
 }
