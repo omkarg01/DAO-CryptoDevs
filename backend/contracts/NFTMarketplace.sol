@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract FakeNFTMarketplace {
+contract NFTMarketplace {
     /// @dev Maintain a mapping of Fake TokenID to Owner addresses
     mapping(uint256 => address) public tokens;
 
@@ -16,7 +16,7 @@ contract FakeNFTMarketplace {
     }
 
     /// @dev getPrice() returns the price of one NFT
-    function getPrice() external returns (uint256) {
+    function getPrice() external view returns (uint256) {
         return nftPrice;
     }
 
