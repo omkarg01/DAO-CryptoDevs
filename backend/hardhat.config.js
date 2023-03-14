@@ -28,5 +28,12 @@ module.exports = {
   etherscan - Object to fill in EtherScan Information for contract verification
 */
 module.exports = {
-  solidity: "0.8.9",
+  solidity: "0.8.0",
+  defaultNetwork: "goerli",
+  networks: {
+    goerli: {
+      url: process.env.ALCHEMY_HTTP_URL,
+      accounts: [process.env.PRIVATE_KEY],
+    },
+  },
 };
