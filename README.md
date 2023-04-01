@@ -1,25 +1,37 @@
-# This is my project title
+# DAO CryptoDevs
+DAO for CryptoDev NFT holders
 
-This sentence describes what my project is about summarized.
+## Preview
+![dao-crypto dev](https://user-images.githubusercontent.com/67428719/229281117-cc5d9d50-abb4-4eb1-afb3-967ba7d9513c.png)
 
-## More Details
+## Demo
+https://dao-crypto-devs-og.vercel.app/
 
-I can explain how my project works here with different topics.
+## Technology Stack & Tools
 
-## Upcoming
+- Solidity (Writing Smart Contracts & Tests)
+- Javascript (React & Testing)
+- [Hardhat](https://hardhat.org/) (Development Framework)
+- [Ethers.js](https://docs.ethers.io/v5/) (Blockchain Interaction)
+- [React.js](https://reactjs.org/) (Frontend Framework)
+- Web3Modal (Connect users with Dapp)
 
-- [x] I have done this activity
-- [ ] I plan to do this activity next
+## Requirements For Initial Setup
+- Install [NodeJS](https://nodejs.org/en/)
 
-## Contribution
+## Setting Up
+### 1. Clone/Download the Repository
 
-Feel free to contribute to this project to make it better!
+### 2. Install Dependencies:
+`$ npm install`
 
-## License
+### 3. Run tests
+`$ npx hardhat test`
 
-This project has an MIT License.
+### 4. Run deployment script
+In a separate terminal execute:
+`$ npx hardhat run ./scripts/deploy.js --network goerli`
 
-## Made by love
-
-- [StarterTemplates](https://twitter.com/startertemp)
-- [LearnWeb3DAO](https://learnweb3.io)
+### 5. Start frontend
+`$ cd frontend`
+`$ npm run start`
